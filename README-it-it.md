@@ -3,11 +3,11 @@
 [![WTFPL 2.0][license-image]][license-url]
 [![NPM version][npm-image]][npm-url]
 
-> Una raccolta di snippet ingannevoli e divertenti scritti in JavaScript 
+> Una raccolta di snippet ingannevoli e divertenti scritti in JavaScript
 
 JavaScript è un ottimo linguaggio. Ha una sintassi semplice, un grande ecosistema e, quello che conta veramente, una community fantastica.
 
-Allo stesso tempo, sappiamo che JavaScript è un linguaggio abbastanza strano con delle parti cervellotiche. Alcune di queste possono rendere il nostro lavoro un inferno, alcune invece possono farci ridere a crepapelle. 
+Allo stesso tempo, sappiamo che JavaScript è un linguaggio abbastanza strano con delle parti cervellotiche. Alcune di queste possono rendere il nostro lavoro un inferno, alcune invece possono farci ridere a crepapelle.
 
 L'idea per WTFJS è di [Brian Leroux](https://twitter.com/brianleroux). Questo elenco è largamente ispirato al suo talk [**“WTFJS”** at dotJS 2012](https://www.youtube.com/watch?v=et8xNAc2ic8):
 
@@ -47,25 +47,25 @@ Attualmente **wtfjs** è disponibile nelle seguenti lingue:
 - [💪🏻 Motivazione](#-motivazione)
 - [✍🏻 Notazione](#-notazione)
 - [👀 Esempi](#-esempi)
-  - [`[]` è uguale a `![]`](#-è-uguale-a-)
-  - [`true` è diverso da `![]`, ma anche diverso da `[]` ](#true-è-diverso-da--ma-anche-diverso-da-)
-  - [true è false](#true-è-false)
+  - [`[]` è uguale a `![]`](#-%C3%A8-uguale-a-)
+  - [`true` è diverso da `![]`, ma anche diverso da `[]`](#true-%C3%A8-diverso-da--ma-anche-diverso-da-)
+  - [true è false](#true-%C3%A8-false)
   - [baNaNa](#banana)
-  - [`NaN` non è `NaN`](#nan-non-è-nan)
-  - [È un fail](#è-un-fail)
-  - [`[]` è truthy, ma non `true`](#-è-truthy-ma-non-true)
-  - [`null` è falsy, ma non `false`](#null-è-falsy-ma-non-false)
-  - [`document.all` è un object, ma è undefined](#documentall-è-un-object-ma-è-undefined)
-  - [Il numero più piccolo rappresentabile è maggiore di zero](#il-numero-più-piccolo-rappresentabile-è-maggiore-di-zero)
-  - [function non è una function](#function-non-è-una-function)
+  - [`NaN` non è `NaN`](#nan-non-%C3%A8-nan)
+  - [È un fail](#%C3%A8-un-fail)
+  - [`[]` è truthy, ma non `true`](#-%C3%A8-truthy-ma-non-true)
+  - [`null` è falsy, ma non `false`](#null-%C3%A8-falsy-ma-non-false)
+  - [`document.all` è un object, ma è undefined](#documentall-%C3%A8-un-object-ma-%C3%A8-undefined)
+  - [Il numero più piccolo rappresentabile è maggiore di zero](#il-numero-pi%C3%B9-piccolo-rappresentabile-%C3%A8-maggiore-di-zero)
+  - [function non è una function](#function-non-%C3%A8-una-function)
   - [Sommare array](#sommare-array)
   - ["Trailing commas" in un array](#trailing-commas-in-un-array)
-  - [L'operatore di uguaglianza sugli array è un mostro](#loperatore-di-uguaglianza-sugli-array-è-un-mostro)
+  - [L'operatore di uguaglianza sugli array è un mostro](#loperatore-di-uguaglianza-sugli-array-%C3%A8-un-mostro)
   - [`undefined` e `Number`](#undefined-e-number)
-  - [`parseInt` è bast**do](#parseint-è-bastdo)
+  - [`parseInt` è bast\*\*do](#parseint-%C3%A8-bast%5C%5Cdo)
   - [Math con `true` e `false`](#math-con-true-e-false)
   - [I commenti HTML sono validi anche in JavaScript](#i-commenti-html-sono-validi-anche-in-javascript)
-  - [`NaN` è ~~not~~ a number](#nan-è-not-a-number)
+  - [`NaN` è ~~not~~ a number](#nan-%C3%A8-not-a-number)
   - [`[]` e `null` sono objects](#-e-null-sono-objects)
   - [Incrementare numeri magicamente](#incrementare-numeri-magicamente)
   - [La precisione di `0.1 + 0.2`](#la-precisione-di-01--02)
@@ -76,16 +76,16 @@ Attualmente **wtfjs** è disponibile nelle seguenti lingue:
   - [Le stringhe non sono istanze di `String`](#le-stringhe-non-sono-istanze-di-string)
   - [Richiamare funzioni con le backticks](#richiamare-funzioni-con-le-backticks)
   - [Call call call](#call-call-call)
-  - [Una proprietà chiamata `constructor`](#una-proprietà-chiamata-constructor)
+  - [Una proprietà chiamata `constructor`](#una-propriet%C3%A0-chiamata-constructor)
   - [Un Object usato come key nelle property di un oggetto](#un-object-usato-come-key-nelle-property-di-un-oggetto)
   - [Accedere ai prototypes con `__proto__`](#accedere-ai-prototypes-con-__proto__)
-  - [`` `${{Object}}` ``](#object)
+  - [`` `${{Object}}` ``](#-object-)
   - [Destructuring con valori di default](#destructuring-con-valori-di-default)
   - [Puntini e lo spreading](#puntini-e-lo-spreading)
   - [Labels](#labels)
   - [Labels annidate](#labels-annidate)
   - [Un `try..catch` insidioso](#un-trycatch-insidioso)
-  - [Si tratta di ereditarietà multipla?](#si-tratta-di-ereditarietà-multipla)
+  - [Si tratta di ereditarietà multipla?](#si-tratta-di-ereditariet%C3%A0-multipla)
   - [Un generator che produce se stesso](#un-generator-che-produce-se-stesso)
   - [Una classe di tipo class](#una-classe-di-tipo-class)
   - [Oggetti non-coercible](#oggetti-non-coercible)
@@ -95,15 +95,15 @@ Attualmente **wtfjs** è disponibile nelle seguenti lingue:
   - [Uno strano return](#uno-strano-return)
   - [Concatenare assegnamenti su un object](#concatenare-assegnamenti-su-un-object)
   - [Accedere alle properties di un object con gli array](#accedere-alle-properties-di-un-object-con-gli-array)
-  - [Null e gli operatori relazionali ](#null-e-gli-operatori-relazionali)
+  - [Null e gli operatori relazionali](#null-e-gli-operatori-relazionali)
   - [`Number.toFixed()` mostra numeri diversi](#numbertofixed-mostra-numeri-diversi)
-  - [`Math.max()` più piccolo di `Math.min()`](#mathmax-più-piccolo-di-mathmin)
+  - [`Math.max()` più piccolo di `Math.min()`](#mathmax-pi%C3%B9-piccolo-di-mathmin)
   - [Confrontare `null` con `0`](#confrontare-null-con-0)
   - [Alcune ridichiarazioni di variabili](#alcune-ridichiarazioni-di-variabili)
   - [Comportamento di default di Array.prototype.sort()](#comportamento-di-default-di-arrayprototypesort)
   - [resolve() non restituisce un'istanza di Promise](#resolve-non-restituisce-unistanza-di-promise)
-- [📚 Altre risorse](#-other-resources)
-- [🎓 Licenza](#-license)
+- [📚 Other resources](#-other-resources)
+- [🎓 License](#-license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 <!-- prettier-ignore-end -->
@@ -171,7 +171,7 @@ Vedi anche [`[]` è truthy, ma non `true`](#-is-truthy-but-not-true).
 - [**12.5.9** Logical NOT Operator (`!`)](https://www.ecma-international.org/ecma-262/#sec-logical-not-operator)
 - [**7.2.13** Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison)
 
-## `true` è diverso da `![]`, ma anche diverso da `[]` 
+## `true` è diverso da `![]`, ma anche diverso da `[]`
 
 Array è diverso da `true`, ma anche not Array è diverso da `true`;
 Array è uguale a `false`, ma anche not Array è uguale a `false`:
@@ -394,9 +394,8 @@ document.all == null; // -> true
 ### 💡 Spiegazione:
 
 > `document.all` veniva utilizzato per accedere agli elementi del DOM, nelle vecchie versioni di IE. Nonostante non sia mai diventato uno standard, veniva ampiamente utilizzato in codice JS non proprio recentissimo. Quando vennero rilasciate le nuove APIs (come `document.getElementById`) questa API divenne obsoleta e il comitato dello standard dovette decidere cosa farne. A causa del suo uso spropositato l'API venne mantenuta ma venne introdotta una violazione intenzionale nelle speficiche di JavaScript.
-> Il motivo per il quale risponde a `false` quando si utilizza l'operatore di [Strict Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-strict-equality-comparison) con `undefined`, mentre `true` quando si utilizza l'operatore di [Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison) è a causa della violazione intenzionale inserita nella specifica che la permette in modo esplicito. 
+> Il motivo per il quale risponde a `false` quando si utilizza l'operatore di [Strict Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-strict-equality-comparison) con `undefined`, mentre `true` quando si utilizza l'operatore di [Abstract Equality Comparison](https://www.ecma-international.org/ecma-262/#sec-abstract-equality-comparison) è a causa della violazione intenzionale inserita nella specifica che la permette in modo esplicito.
 
->
 > &mdash; [“Obsolete features - document.all”](https://html.spec.whatwg.org/multipage/obsolete.html#dom-document-all) at WhatWG - HTML spec
 > &mdash; [“Chapter 4 - ToBoolean - Falsy values”](https://github.com/getify/You-Dont-Know-JS/blob/0d79079b61dad953bbfde817a5893a49f7e889fb/types%20%26%20grammar/ch4.md#falsy-objects) at YDKJS - Types & Grammar
 
@@ -535,7 +534,7 @@ Qui la sezione corrispondente:
 - [**20.1.1** The Number Constructor](https://www.ecma-international.org/ecma-262/#sec-number-constructor)
 - [**7.1.3** ToNumber(`argument`)](https://www.ecma-international.org/ecma-262/#sec-tonumber)
 
-## `parseInt` è bast**do
+## `parseInt` è bast\*\*do
 
 `parseInt` è famoso per le sue stranezze:
 
@@ -612,10 +611,9 @@ Facciamo un po' di calcoli:
 
 ```js
 true -
-  true + (
-    // -> 2
-    true + true
-  ) *
+  true +
+  // -> 2
+  (true + true) *
     (true + true) -
   true; // -> 3
 ```
@@ -968,7 +966,7 @@ console.log.call.call.call.call.call.apply(a => a, [1, 2]);
 
 ### 💡 Spiegazione:
 
-Attenzione, ti può mettere in crisi il cervello! Prova ad eseguire questo codice a mente: stiamo applicando il metodo `call` usando il metodo `apply`. 
+Attenzione, ti può mettere in crisi il cervello! Prova ad eseguire questo codice a mente: stiamo applicando il metodo `call` usando il metodo `apply`.
 Leggi di più:
 
 - [**19.2.3.3** Function.prototype.call(`thisArg`, ...`args`)](https://www.ecma-international.org/ecma-262/#sec-function.prototype.call)
@@ -1647,7 +1645,7 @@ Come può `null` non essere uguale a, o maggiore di `0`, se `null >= 0` è effet
 Il modo in cui queste tre espressioni vengono valutate sono tutti diversi ed è per questo che viene prodotto questo comportamento un po' inaspettato.
 
 Per prima cosa analizziamo il comportamento dell'operatore di abstract equality comparison, `null == 0`.
-Solitamente, se l'operatore non riesce a confrontare i suoi operanti in modo opportuno, li converte in numeri e compara questi ultimo. Quindi ci si può aspettare il seguente comportamento: 
+Solitamente, se l'operatore non riesce a confrontare i suoi operanti in modo opportuno, li converte in numeri e compara questi ultimo. Quindi ci si può aspettare il seguente comportamento:
 
 ```js
 // This is not what happens
@@ -1732,7 +1730,7 @@ Passa una `comparefn` se vuoi ordinare qualcosa che non è una stringa.
 
 ```javascript
 const theObject = {
-  "a": 7,
+  a: 7
 };
 const thePromise = new Promise((resolve, reject) => {
   resolve(theObject);
@@ -1741,7 +1739,7 @@ const thePromise = new Promise((resolve, reject) => {
 thePromise.then(value => {
   console.log(value === theObject); // -> true
   console.log(value); // -> { a: 7 }
-})
+});
 ```
 
 Il `value` che viene risolto da `thePromise` è esattamente `theObject`.
@@ -1759,7 +1757,7 @@ const thePromise = new Promise((resolve, reject) => {
 thePromise.then(value => {
   console.log(value === theObject); // -> false
   console.log(value); // -> 7
-})
+});
 ```
 
 ### 💡 Spiegazione:
@@ -1768,7 +1766,7 @@ thePromise.then(value => {
 
 &ndash; [Promise.resolve() on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)
 
- La specifica è [ECMAScript 25.6.1.3.2 Promise Resolve Functions](https://tc39.es/ecma262/#sec-promise-resolve-functions). But it is not quite human-friendly.
+La specifica è [ECMAScript 25.6.1.3.2 Promise Resolve Functions](https://tc39.es/ecma262/#sec-promise-resolve-functions). But it is not quite human-friendly.
 
 # 📚 Other resources
 
