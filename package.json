@@ -1,6 +1,6 @@
 {
   "name": "wtfjs",
-  "version": "1.22.7",
+  "version": "1.22.8",
   "description": "A list of funny and tricky JavaScript examples",
   "bin": {
     "wtfjs": "wtfjs.js"
@@ -40,13 +40,13 @@
     "semantic-release": "^19.0.2"
   },
   "dependencies": {
-    "boxen": "^6.2.1",
+    "boxen": "^7.0.0",
     "chalk": "^5.0.1",
     "default-pager": "^1.1.0",
-    "meow": "^9.0.0",
+    "meow": "^10.1.4",
     "msee": "^0.3.3",
     "through2": "^4.0.2",
-    "update-notifier": "^5.1.0"
+    "update-notifier": "^6.0.2"
   },
   "lint-staged": {
     "README*.md": [
